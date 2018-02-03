@@ -75,7 +75,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         menu.addItem(NSMenuItem(title: "Hide Desktop Icons", action: #selector(AppDelegate.hideDesktopIcons(_:)), keyEquivalent: ""))
         menu.addItem(NSMenuItem(title: "Show Desktop Icons", action: #selector(AppDelegate.showDesktopIcons(_:)), keyEquivalent: ""))
-        
+        menu.addItem(NSMenuItem.separator())
+        menu.addItem(NSMenuItem(title: "Quit Shortcuts", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
+
         statusItem.menu = menu
     }
 
