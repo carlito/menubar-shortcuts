@@ -42,7 +42,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             return task.terminationStatus
         }
         
-        shell("iconshide")
+        shell()
         
         restartFinder()
     }
@@ -59,7 +59,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             return task.terminationStatus
         }
         
-        shell("iconsshow")
+        shell()
         restartFinder()
     }
     
